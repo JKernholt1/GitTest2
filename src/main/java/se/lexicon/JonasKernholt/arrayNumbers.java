@@ -22,6 +22,7 @@ public class arrayNumbers {
             rackEmUp = stuffer.nextInt();
             loadsOnumbers[i] = rackEmUp;
         }
+
         System.out.println("\nHere are the numbers you typed into the array:");
         for (int j = 0; j < howManyNs; j++) {
                 System.out.print(loadsOnumbers[j] + "  ");
