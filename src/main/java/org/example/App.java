@@ -1,4 +1,4 @@
-package org.example;
+package se.lexicon.JonasKernholt;
 
 /**
  * Hello world!
@@ -10,4 +10,5 @@ public class App
     {
         System.out.println( "Hello World!" );
     }
+// changes
 }
