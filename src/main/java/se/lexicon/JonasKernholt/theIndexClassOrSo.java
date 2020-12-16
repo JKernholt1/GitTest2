@@ -4,28 +4,17 @@ import java.util.Arrays;
 
 public class theIndexClassOrSo {
 
-
+int indexNumber;
 
     public static void main(String[] args) {
     System.out.println("This program lets you type in numbers into an array, and then asks you to ask for a single number of them.");
     System.out.println("If the number exists, it will return its original array position, otherwise it will return \"-1\"");
     System.out.println("\nNow, how many numbers would you like to type into the array?");
 
-    indexOf();
-    int indexNumber2 = indexOf(indexNumber);
 
-    if (indexNumber2 == -1) {
-    System.out.println("\nWrong number... Here's your \"-1\" :)");
-    } else {
-        System.out.println("\nNumber found at array index position " + indexNumber2);
-    }
+//alla scanners ska ske i main.
+//stoppa in en färdig array i metoden. Den returnerar sedan direkt indexNumber som stoppas in i indexNumber2.
 
-    System.out.println("\n\nEnd of program.");
-
-}// main
-
-
-    public static int indexOf(int indexNumber) {
 
         Scanner picker = new Scanner(System.in);
         Scanner stuffer = new Scanner(System.in);
@@ -34,7 +23,7 @@ public class theIndexClassOrSo {
         int rackEmUp;
         int comparer;
         int areYouThere;
-
+        int indexNumber;
 
         howManyNs = picker.nextInt();
         System.out.println("\nYou want to type in " + howManyNs + " numbers into the array.");
@@ -48,32 +37,55 @@ public class theIndexClassOrSo {
 
         System.out.println("\nNow type in the number you are looking for: ");
         comparer = checker.nextInt();
+        System.out.println("indexNumber");
+//        int indexnumber2 = indexOf(loadsOnumbers[], comparer);
+
+    }// main
+/*
+        private static int indexOf() {
+
+
+
 
         int copy[] = Arrays.copyOf(loadsOnumbers, loadsOnumbers.length);
         Arrays.sort(copy);
-
 //--
         areYouThere = Arrays.binarySearch(copy, comparer);
 
         if (areYouThere < -0.5) {
             System.out.println("Wrong number... Here's your \"-1\" :)");
             indexNumber = -1;
-            return indexNumber;
+           return indexNumber;
         } else {
             areYouThere = Arrays.binarySearch(loadsOnumbers, comparer);
             if (areYouThere < 0) {
                 //   System.out.println("Number found at array index position 0.");
                 indexNumber = 0;
-                return indexNumber;
+             return indexNumber;
             } else {
                 //   System.out.println("Number found at array index position " + areYouThere);
                 indexNumber = areYouThere;
-                return indexNumber;
+               return indexNumber;
             } //end of areYouThere strange position "0" -1 to very low minus method output bug fixer (hopefully).
         } //actual array position
+        }  //method indexOf()
+*/
+/*
+        int indexNumber2 = indexOf(loadsOnumbers[], comparer);
+        if (indexNumber2 == -1) {
+            System.out.println("\nWrong number... Here's your \"-1\" :)");
+        } else {
+            System.out.println("\nNumber found at array index position " + indexNumber2);
+        }
+
+        System.out.println("\n\nEnd of program.");
+*/
 
 
-    }  //method indexOf()
 
+
+/*
+*/
 
 }  //class
+// this class is not functional yet
