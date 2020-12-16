@@ -12,7 +12,7 @@ public class theIndexClassOrSo {
     System.out.println("\nNow, how many numbers would you like to type into the array?");
 
     indexOf();
-    int indexNumber2 = indexNumber;
+    int indexNumber2 = indexOf(indexNumber);
 
     if (indexNumber2 == -1) {
     System.out.println("\nWrong number... Here's your \"-1\" :)");
@@ -25,7 +25,7 @@ public class theIndexClassOrSo {
 }// main
 
 
-    private static int indexOf() {
+    public static int indexOf(int indexNumber) {
 
         Scanner picker = new Scanner(System.in);
         Scanner stuffer = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class theIndexClassOrSo {
         int rackEmUp;
         int comparer;
         int areYouThere;
-        int indexNumber;
+
 
         howManyNs = picker.nextInt();
         System.out.println("\nYou want to type in " + howManyNs + " numbers into the array.");
